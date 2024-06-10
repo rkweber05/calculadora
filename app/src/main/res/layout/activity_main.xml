@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_strong"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/_246"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btAdicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="+"
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+    <Button
+        android:id="@+id/btNumeroNove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="9"
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btAdicao"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+    <Button
+        android:id="@+id/btNumeroOito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="8"
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btNumeroNove"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+    <Button
+        android:id="@+id/btNumeroSete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="7"
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btNumeroOito"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+    <Button
+        android:id="@+id/btNumeroCinco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="5"
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btNumeroSeis"
+        app:layout_constraintTop_toBottomOf="@+id/btNumeroOito" />
+
+    <Button
+        android:id="@+id/btNumeroSeis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="6"
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btSubtracao"
+        app:layout_constraintTop_toBottomOf="@+id/btNumeroNove" />
+
+    <Button
+        android:id="@+id/btSubtracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="-"
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAdicao" />
+
+    <Button
+        android:id="@+id/btNumeroQuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="4"
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btNumeroCinco"
+        app:layout_constraintTop_toBottomOf="@+id/btNumeroSete" />
+
+    <Button
+        android:id="@+id/btDivisao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="24sp"
+        android:visibility="visible"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btSubtracao"
+        tools:text="/"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btNumeroTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="3"
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btDivisao"
+        app:layout_constraintTop_toBottomOf="@+id/btNumeroSeis" />
+
+    <Button
+        android:id="@+id/btNumeroUm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="1"
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btNumeroDois"
+        app:layout_constraintTop_toBottomOf="@+id/btNumeroQuatro" />
+
+    <Button
+        android:id="@+id/btNumeroDois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="2"
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btNumeroTres"
+        app:layout_constraintTop_toBottomOf="@+id/btNumeroCinco" />
+
+    <Button
+        android:id="@+id/btMultiplicacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="*"
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btDivisao" />
+
+    <Button
+        android:id="@+id/btIgual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="="
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btMultiplicacao"
+        app:layout_constraintTop_toBottomOf="@+id/btNumeroTres" />
+
+    <Button
+        android:id="@+id/btPonto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="."
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btIgual"
+        app:layout_constraintTop_toBottomOf="@+id/btNumeroDois" />
+
+    <Button
+        android:id="@+id/btNumeroZero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray_strong"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="0"
+        android:textSize="24sp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btPonto"
+        app:layout_constraintTop_toBottomOf="@+id/btNumeroUm" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMultiplicacao"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/btHistorico"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-160dp"
+        android:backgroundTint="@color/white"
+        android:onClick="acessarHistorico"
+        android:text="HISTORY"
+        android:textColor="@color/gray_strong"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btClear"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btNumeroZero"
+        app:layout_goneMarginEnd="5dp" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btClear"
+        app:layout_constraintStart_toEndOf="@+id/btHistorico"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-160dp"
+        android:backgroundTint="@color/white"
+        android:text="CLEAR"
+        android:textColor="@color/gray_strong"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/btHistorico"
+        app:layout_constraintTop_toTopOf="@+id/btNumeroZero"
+        app:layout_goneMarginStart="5dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
